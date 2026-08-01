@@ -4,66 +4,101 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact Us</title>
+    <link rel="stylesheet" href="stylesheets/site.css">
 </head>
 <body>
-    <a href="index.html">Home</a>
-    <a href="about_us.html">About Us</a>
-    <a href="contact_us.html">Contact Us</a>
+    <header>
+        <div id = "banner">
+            <p>Notification</p>
+        </div>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="about_us.html">About Us</a>
+            <a href="contact_us.html">Contact Us</a>
+        </nav>
+    </header>
         
-    <h1 style="color: cornflowerblue;">Contact Us</h1>
-    <hr/>
+    <main>
+        <h1>Contact Us</h1>
+        <hr/>
 
-    <h2>Our Locations</h2>
-    <table>
-        <tr>
-            <th>Locations</th>
-            <th>Opening Hours</th>
-            <th>Email Address</th>
-            <th>Phone Number</th>
-        </tr>
-        <tr>
-            <td>Mandeville</td>
-            <td>9am - 5pm</td>
-            <td>mandeville@animalpreservation.org</td>
-            <td>(123) 456-7890</td>
-        </tr>
-        <tr>
-            <td>New York</td>
-            <td>9am - 5pm</td>
-            <td>newyork@animalpreservation.org</td>
-            <td>(987) 654-3210</td>
-        </tr>
-        <tr>
-            <td>Los Angeles</td>
-            <td>9am - 5pm</td>
-            <td>losangeles@animalpreservation.org</td>
-            <td>(555) 123-4567</td>
-        </tr>
-        <tr>
-            <td>Chicago</td>
-            <td>9am - 5pm</td>
-            <td>chicago@animalpreservation.org</td>
-            <td>(555) 987-6543</td>
-        </tr>
-    </table>
-    <h2>General Inquiry Form</h2>
-    <form action="confirmation.html">
-        <label for="fullname">Name: *</label><br/>
-        <input type="text" id="fullname" name="fullname" required/>
-        <br/><br/>
-        <label for="email">Email: *</label><br/> 
-        <input type="email" id="email" name="emailaddress" required/>
-        <br/><br/>
-        <label>Are you employed?</label><br/>
-        <input type="radio" value="Y" name="employed"/> Yes
-        <input type="radio" value="N" name="employed"/> No
-        <br/><br/>
-        <label for="inquiry">State your inquiry *</label>
-        <br/>
-        <textarea cols="50" rows="10" maxlength="150" id="inquiry" name="inquiry" required></textarea>
-        <br/><br/>
-        <input type="submit"/>
+        <article>
+            <h2>Our Locations</h2>
+            <table>
+                <tr>
+                    <th>Logo</th>
+                    <th>Locations</th>
+                    <th>Opening Hours</th>
+                    <th>Email Address</th>
+                    <th>Phone Number</th>
+                </tr>
+                <tr>
+                    <td>
+                        <img class = "logo" src="images/logo.webp" alt="Animal Preservation Logo" />
+                    </td>
+                    <td>Mandeville</td>
+                    <td>9am - 5pm</td>
+                    <td>mandeville@animalpreservation.org</td>
+                    <td>(123) 456-7890</td>
+                </tr>
+                <tr>
+                    <td>
+                        <img class = "logo" src="images/logo.webp" alt="Animal Preservation Logo" />
+                    </td>
+                    <td>New York</td>
+                    <td>9am - 5pm</td>
+                    <td>newyork@animalpreservation.org</td>
+                    <td>(987) 654-3210</td>
+                </tr>
+                <tr>
+                    <td>
+                        <img class = "logo" src="images/logo.webp" alt="Animal Preservation Logo" />
+                    </td>
+                    <td>Los Angeles</td>
+                    <td>9am - 5pm</td>
+                    <td>losangeles@animalpreservation.org</td>
+                    <td>(555) 123-4567</td>
+                </tr>
+                <tr>
+                    <td>
+                        <img class = "logo" src="images/logo.webp" alt="Animal Preservation Logo" />
+                    </td>
+                    <td>Chicago</td>
+                    <td>9am - 5pm</td>
+                    <td>chicago@animalpreservation.org</td>
+                    <td>(555) 987-6543</td>
+                </tr>
+            </table>
+        </article>
 
-    </form>
+        <article>
+            <h2>General Inquiry Form</h2>
+            <form action="confirmation.html">
+                <label for="fullname">Name: *</label><br />
+                <input type="text" id="fullname" name="fullname" required />
+                <br /><br />
+                <label for="email">Email: *</label><br />
+                <input type="email" id="email" name="emailaddress" required />
+                <br /><br />
+                <label>Are you employed?</label><br />
+                <input type="radio" value="Y" name="employed" /> Yes
+                <input type="radio" value="N" name="employed" /> No
+                <br /><br />
+                <label for="inquiry">State your inquiry *</label>
+                <br />
+                <textarea cols="50" rows="10" maxlength="150" id="inquiry" name="inquiry" required></textarea>
+                <br /><br />
+                <input type="submit" />
+            
+            </form>
+        </article>
+    </main>
+
+    <footer>
+        <br/><br/>
+        <a href="https://www.amazon.com" target="_blank">Amazon</a>
+        <a href="https://www.ebay.com" target="_blank">Ebay</a>            
+        <a href="https://www.walmart.com" target="_blank">Walmart</a>
+    </footer>
 </body>
 </html>

@@ -1,0 +1,71 @@
+h1 {
+    color: rgb(51, 94, 172);
+}
+
+h1, h2 {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+}
+
+h2 {
+    color: crimson;
+    text-decoration: overline;
+}
+
+p, li {
+    font-family: 'Courier New', Courier, monospace;
+}
+
+#banner {
+    background-color:darkkhaki;
+    padding-bottom: 5px;
+    padding-top: 5px;
+    text-align: center;
+}
+
+#banner p{
+    margin: 0px;
+}
+
+#nav, nav{
+    background-color:cadetblue;
+    padding: 10px;
+    text-align: center;
+}
+
+#nav a, nav a {
+    color:aliceblue;
+    text-decoration: none;
+    font-size: large;
+    margin-right: 10px;
+    padding: 10px;
+}
+
+#nav a:hover, nav a:hover {
+    background-color: darkslategray;
+    color: white;
+}
+
+#footer, footer {
+    background-color: #E7E9EB;
+    min-height: 150px;
+    text-align: center;
+}
+
+#footer a, footer a {
+    color: blue;
+    text-decoration: overline;
+}
+
+#main, main {
+    width: 80%;
+    margin: 0 auto;
+}
+
+article {
+    margin-bottom: 50px;
+}
+
+.logo {
+    width: 50px;
+    height: 50px;
+}
