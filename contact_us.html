@@ -73,7 +73,7 @@
 
         <article>
             <h2>General Inquiry Form</h2>
-            <form action="confirmation.html">
+            <form action="confirmation.html" id="contactForm">
                 <label for="fullname">Name: *</label><br />
                 <input type="text" id="fullname" name="fullname" required />
                 <br /><br />
@@ -89,6 +89,7 @@
                 <textarea cols="50" rows="10" maxlength="150" id="inquiry" name="inquiry" required></textarea>
                 <br /><br />
                 <input type="submit" />
+                <button type="button" onclick="ClearForm()">Clear</button>
             
             </form>
         </article>
@@ -100,5 +101,7 @@
         <a href="https://www.ebay.com" target="_blank">Ebay</a>            
         <a href="https://www.walmart.com" target="_blank">Walmart</a>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@4.0.0/dist/jquery.min.js"></script>
+    <script src="scripts/site.js"></script>
 </body>
 </html>
