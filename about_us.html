@@ -1,62 +1,268 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>About Us</title>
-    <link rel="stylesheet" href="stylesheets/site.css">
-</head>
-<body>
+    <link rel="stylesheet" href="stylesheets/bootstrap.min.css" />
+    <link rel="stylesheet" href="stylesheets/site.css" />
+  </head>
+  <body>
     <header>
-        <div id = "banner">
-            <p>Notification</p>
+      <div id="banner" class="bg-secondary text-white">
+        Random Website Notification
+      </div>
+      <nav class="navbar navbar-expand-lg bg-primary" data-bs-theme="dark">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">Animal Protection</a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNavAltMarkup"
+            aria-controls="navbarNavAltMarkup"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+              <a class="nav-link" aria-current="page" href="index.html">Home</a>
+              <a class="nav-link" href="about_us.html">About Us</a>
+              <a class="nav-link" href="contact_us.html">Contact Us</a>
+            </div>
+          </div>
         </div>
-        <nav>
-            <a href="index.html">Home</a>
-            <a href="about_us.html">About Us</a>
-            <a href="contact_us.html">Contact Us</a>
-        </nav>
+      </nav>
     </header>
 
-    <main>
-        <h1>About Us</h1>
-        <hr />
-        
-        <article>
-            <h2>Animal Preservation Agency</h2>
-            <img src="images/images.jpeg" alt="Baby Snow Leopard" />
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cumque facere omnis quis nesciunt fugit dolore nihil hic
-                maiores a assumenda ducimus in totam, et maxime
-                eveniet aspernatur eum est dolor.</p>
-        </article>
-        
-        <article>
-            <h2>Daily Tasks</h2>
-            <ul>
-                <li>Feed the animals</li>
-                <li>Clean the enclosures</li>
-                <li>Monitor the health of the animals</li>
-            </ul>
-        </article>
-      
-        <article>
-            <h2>How you can join</h2>
-            <ol>
-                <li>Fill out the application form</li>
-                <li>Attend an interview</li>
-                <li>Complete the training program</li>
-            </ol>
-        </article>
-        
+    <main class="container">
+      <h1>About Us</h1>
+      <hr />
+
+      <article>
+        <h2>Animal Preservation Agency</h2>
+        <img src="images/images.jpeg" alt="Baby Snow Leopard" />
+        <p>
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cumque
+          facere omnis quis nesciunt fugit dolore nihil hic maiores a assumenda
+          ducimus in totam, et maxime eveniet aspernatur eum est dolor.
+        </p>
+      </article>
+
+      <article>
+        <h2>Daily Tasks</h2>
+        <div class="row">
+          <div class="col">
+            <div class="card" style="width: 18rem">
+              <img
+                src="images/feed the animals.webp"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="card-body">
+                <h5 class="card-title">Feed the animals</h5>
+                <p class="card-text">
+                  Feed the animals and ensure they are healthy and
+                  well-nourished.
+                </p>
+                <a href="contact_us.html" class="btn btn-primary">Click Me!</a>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card" style="width: 18rem">
+              <img src="images/clean.webp" class="card-img-top" alt="..." />
+              <div class="card-body">
+                <h5 class="card-title">Clean the enclosures</h5>
+                <p class="card-text">
+                  Keep the animal enclosures clean and safe for the animals.
+                </p>
+                <a href="contact_us.html" class="btn btn-primary">Check Out</a>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card" style="width: 18rem">
+              <img
+                src="images/monitor health.jpeg"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="card-body">
+                <h5 class="card-title">Monitor the health of the animals</h5>
+                <p class="card-text">
+                  Regularly check the health of the animals and report any
+                  issues to the veterinary team.
+                </p>
+                <a href="contact_us.html" class="btn btn-primary">Click Here</a>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card" style="width: 18rem">
+              <img
+                src="images/Public-Education-1.jpg"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="card-body">
+                <h5 class="card-title">Educate the public</h5>
+                <p class="card-text">
+                  Inform and engage the public about animal conservation
+                  efforts.
+                </p>
+                <a href="contact_us.html" class="btn btn-primary"
+                  >Lets Educate</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <article>
+        <h2>How you can join</h2>
+        <div class="accordion" id="accordionExample">
+          <div class="accordion-item">
+            <h3 class="accordion-header">
+              <button
+                class="accordion-button"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapseOne"
+                aria-expanded="true"
+                aria-controls="collapseOne"
+              >
+                Fill out the application form
+              </button>
+            </h3>
+            <div
+              id="collapseOne"
+              class="accordion-collapse collapse show"
+              data-bs-parent="#accordionExample"
+            >
+              <div class="accordion-body">
+                <strong>This is the first item’s accordion body.</strong> It is
+                shown by default, until the collapse plugin adds the appropriate
+                classes that we use to style each element. These classes control
+                the overall appearance, as well as the showing and hiding via
+                CSS transitions. You can modify any of this with custom CSS or
+                overriding our default variables. It’s also worth noting that
+                just about any HTML can go within the
+                <code>.accordion-body</code>, though the transition does limit
+                overflow.
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h3 class="accordion-header">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapseTwo"
+                aria-expanded="false"
+                aria-controls="collapseTwo"
+              >
+                Attend an interview
+              </button>
+            </h3>
+            <div
+              id="collapseTwo"
+              class="accordion-collapse collapse"
+              data-bs-parent="#accordionExample"
+            >
+              <div class="accordion-body">
+                <strong>This is the second item’s accordion body.</strong> It is
+                hidden by default, until the collapse plugin adds the
+                appropriate classes that we use to style each element. These
+                classes control the overall appearance, as well as the showing
+                and hiding via CSS transitions. You can modify any of this with
+                custom CSS or overriding our default variables. It’s also worth
+                noting that just about any HTML can go within the
+                <code>.accordion-body</code>, though the transition does limit
+                overflow.
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h3 class="accordion-header">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapseThree"
+                aria-expanded="false"
+                aria-controls="collapseThree"
+              >
+                Complete the training program
+              </button>
+            </h3>
+            <div
+              id="collapseThree"
+              class="accordion-collapse collapse"
+              data-bs-parent="#accordionExample"
+            >
+              <div class="accordion-body">
+                <strong>This is the third item’s accordion body.</strong> It is
+                hidden by default, until the collapse plugin adds the
+                appropriate classes that we use to style each element. These
+                classes control the overall appearance, as well as the showing
+                and hiding via CSS transitions. You can modify any of this with
+                custom CSS or overriding our default variables. It’s also worth
+                noting that just about any HTML can go within the
+                <code>.accordion-body</code>, though the transition does limit
+                overflow.
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h3 class="accordion-header">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapseFour"
+                aria-expanded="false"
+                aria-controls="collapseFour"
+              >
+                Report to the volunteer coordinator
+              </button>
+            </h3>
+            <div
+              id="collapseFour"
+              class="accordion-collapse collapse"
+              data-bs-parent="#accordionExample"
+            >
+              <div class="accordion-body">
+                <strong>This is the fourth item’s accordion body.</strong> It is
+                hidden by default, until the collapse plugin adds the
+                appropriate classes that we use to style each element. These
+                classes control the overall appearance, as well as the showing
+                and hiding via CSS transitions. You can modify any of this with
+                custom CSS or overriding our default variables. It’s also worth
+                noting that just about any HTML can go within the
+                <code>.accordion-body</code>, though the transition does limit
+                overflow.<br/><br/>
+
+                <a href="contact_us.html" class="btn btn-outline-secondary">Contact Us</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </article>
     </main>
 
     <footer>
-        <br/><br/>
-        <a href="https://www.amazon.com" target="_blank">Amazon</a>
-        <a href="https://www.ebay.com" target="_blank">Ebay</a>            
-        <a href="https://www.walmart.com" target="_blank">Walmart</a>
+      <br /><br />
+      <a href="https://www.amazon.com" target="_blank">Amazon</a>
+      <a href="https://www.ebay.com" target="_blank">Ebay</a>
+      <a href="https://www.walmart.com" target="_blank">Walmart</a>
     </footer>
-    
-
-</body>
+    <script src="scripts/jquery.min.js"></script>
+    <script src="scripts/bootstrap.min.js"></script>
+    <script src="scripts/site.js"></script>
+  </body>
 </html>
